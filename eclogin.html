@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Elective course" content="Course Registartion">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="ec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .forms {
+            margin: 80px 100px 50px;
+        }
+
+        .forms .form {
+            flex-basis: 40%;
+            padding: 50px 10px 50px 80px;
+        }
+
+        .forms .form .sum {
+                left: -80% !important;
+        }
+
+        .submit{
+            padding: 50px 0 25px;
+        }
+
+        @media(max-width: 700px){
+            .forms{
+                margin: 150px 25px 50px;
+            }
+        }
+
+        @media(max-width: 1320px){
+            .forms .form .sum {
+                left: -90% !important;
+            }
+        }
+
+        @media(max-width: 1350px){
+            .forms .form .sum {
+                left: -85%;
+            }
+        }
+
+        @media(max-width: 1400px){
+            .forms .form .sum {
+                left: -79%;
+            }
+        }
+        
+        @media(max-width: 1166px){
+            .forms .form .sum {
+                left: -95% !important;
+            }
+        }
+
+        @media(max-width: 1156px){
+            .forms .form .sum {
+                left: -100% !important;
+            }
+        }
+
+        @media (max-width: 1090px){
+            .forms {
+                margin: 300px 100px 50px;
+            }
+
+            .forms .form {
+                flex-basis: 100%;
+                padding: 50px 10px;
+            }
+
+            .forms .form .sum {
+                top: -48%;
+                transform: translateX(-50%);
+                left: 50% !important;
+            }
+        }    
+
+        @media(max-width: 800px){
+            .forms{
+                margin: 300px 20px 50px;
+            }
+
+            .forms .form {
+                padding: 50px 10px 50px 10px;
+            }
+        }
+
+        @media(max-width: 440px){
+            .forms{
+                margin: 350px 20px 50px;
+            }
+
+            .forms .form .sum {
+                top: -55%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+
+            <div class="menu">
+                <button class="closebtn">&times;</button>
+                <ul>
+                    <li><a href="#" class="active">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Details</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-toggle">
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="forms">
+            <div class="form frm">
+                <div class="sum">
+                    <p class="ec">Elective Course</p>
+                    <p class="reg">Login</p>
+
+                    <div class="cnt">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In debitis, velit aspernatur nobis accusamus porro, iusto quia quasi suscipit voluptas quam nesciunt eius. Corporis officiis unde voluptatibus cum illum fugit!</p>
+                    </div>
+                </div>
+                <p class="cr">Login</p>
+                <form action="" method="post">
+                    <div class="roll input">
+                        <input type="text" placeholder="Roll No" required>
+                    </div>
+
+                    <div class="pass input">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class="fa fa-eye" id="togglePassword"></i>
+                    </div>
+
+                    <div class="submit input">
+                        <input type="submit" value="Login">
+                    </div>
+
+                    <div class="l">
+                        <p class="lo">Don't have an account ? <a href="#"> Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>Developed by <a href="http://www.unknowncommunity.in/" target="_blank">Unknown Community</a></p>
+        </footer>
+        <script src="ec.js"></script>
+    </div>
+</body>
+</html>
